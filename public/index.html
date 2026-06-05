@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rifa Bandeira Preta 🎰</title>
+  <style>* { margin: 0; padding: 0; box-sizing: border-box; } body { background: #F7F4F0; }</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="./app.jsx" data-presets="react"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const root = ReactDOM.createRoot(document.getElementById("root"))
+      root.render(React.createElement(RifaApp))
+    })
+  </script>
+</body>
+</html>
